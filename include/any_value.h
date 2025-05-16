@@ -43,7 +43,7 @@ union Value {
   signed short signed_short_value;
   signed short int signed_short_int_value;
   unsigned short unsigned_short_value;
-  unsigned short int unsigned_short int_value;
+  unsigned short int unsigned_short_int_value;
   int int_value;
   signed signed_value;
   signed int signed_int_value;
