@@ -12,6 +12,13 @@ struct LinkedListNode {
 	AnyValue	value;
 }
 
+/* Doubly Linked List Node pointing */
+struct DoublyLinkedListNode {
+	LinkedListNode *prev;
+	LinkedListNode *next;
+	AnyValue value;
+}
+
 /* Move to the next node in the linked list */
 LinkedListNode *NextNode(LinkedListNode *self);
 
