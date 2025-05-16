@@ -16,10 +16,12 @@ struct SingleLinkedList {
 LinkedListNode *SingleLinkedListAppend(SingleLinkedList *self, AnyValue value);
 
 
-/* SingleLinkedListRemoveEnd: adding a single linkedlist node to the end of the linked list */
-LinkedListNode *SingleLinkedList(SingleLinkedList *self, AnyValue value);
+/* SingleLinkedListPopEnd: start a single linkedlist node to the end of the linked list */
+LinkedListNode *SingleLinkedListPopEnd(SingleLinkedList *self);
 
 
+/* SingleLinkedListPopStart: Remove a single linkedlist node to the start of the linked list */
+LinkedListNode *SingleLinkedListPopStart(SingleLinkedList *self);
 
 
 /* Doubly Linked List */
@@ -29,6 +31,17 @@ struct DoublyLinkedList {
 }
 
 /* Doubly Linked List Methods */
+
+/* SingleLinkedListAppend: adding a single linkedlist node to the end of the linked list */
+DoublyLinkedListNode *DoublyLinkedListAppend(SingleLinkedList *self, AnyValue value);
+
+
+/* SingleLinkedListPopEnd: start a single linkedlist node to the end of the linked list */
+LinkedListNode *SingleLinkedListPopEnd(SingleLinkedList *self);
+
+
+/* SingleLinkedListPopStart: Remove a single linkedlist node to the start of the linked list */
+LinkedListNode *SingleLinkedListPopStart(SingleLinkedList *self);
 
 
 #endif
