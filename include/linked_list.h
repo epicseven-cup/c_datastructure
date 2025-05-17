@@ -12,13 +12,25 @@ struct SingleLinkedList {
 
 /* Single Linked List Methods */
 
-/* SingleLinkedListAppend: adding a single linkedlist node to the end of the linked list */
+/* SingleLinkedListSize: Get the size of linked list */
+int SingleLinkedListSize(SingleLinkedList *self);
+
+/* SingleLinkedListAppend: adding a single linked list node to the end of the linked list */
 LinkedListNode *SingleLinkedListAppend(SingleLinkedList *self, AnyValue value);
 
 
-/* SingleLinkedListRemoveEnd: adding a single linkedlist node to the end of the linked list */
-LinkedListNode *SingleLinkedList(SingleLinkedList *self, AnyValue value);
+/* SingleLinkedListPopEnd: remove a single linked list node to the end of the linked list */
+LinkedListNode *SingleLinkedListPopEnd(SingleLinkedList *self);
 
+
+/* SingleLinkedListPopStart: remove a single linked list node to the start of the linked list */
+LinkedListNode *SingleLinkedListPopStart(SingleLinkedList *self);
+
+/* SingleLinkedListGetHead: get the head of the single linked list */
+LinkedListNode *SingleLinkedListGetHead(DoublyLinkedList *self);
+
+/* SingleLinkedListGetTail: get the tail of the single linked list */
+LinkedListNode *SingleLinkedListGetTail(DoublyLinkedList *self);
 
 
 
@@ -29,6 +41,25 @@ struct DoublyLinkedList {
 }
 
 /* Doubly Linked List Methods */
+
+
+/* DoublyLinkedListSize: Get the size of linked list */
+int DoubleyLinkedListSize(DoublyLinkedList *self);
+
+/* DoublyLinkedListAppend: adding a  doubly linked list node to the end of the linked list */
+DoublyLinkedListNode *DoublyLinkedListAppend(DoublyLinkedList *self, AnyValue value);
+
+/* DoublyLinkedListPopEnd: remove a  doubly linked list node to the end of the linked list */
+LinkedListNode *DoubleyLinkedListPopEnd(DoublyLinkedList *self);
+
+/* DoublyLinkedListPopStart: remove a  doubly linked list node to the start of the linked list */
+LinkedListNode *DoubleyLinkedListPopStart(DoublyLinkedList *self);
+
+/* DoublyLinkedListGetHead: get the head of the doubly linked list */
+LinkedListNode *DoublyLinkedListGetHead(DoublyLinkedList *self);
+
+/* DoublyLinkedListGetTail: get the tail of the doubly linked list */
+LinkedListNode *DoublyLinkedListGetTail(DoublyLinkedList *self);
 
 
 #endif
