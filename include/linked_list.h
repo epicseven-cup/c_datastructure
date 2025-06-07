@@ -1,5 +1,5 @@
-#ifndef LINKED_LIST_NODE.H
-#define LINKED_LIST_NODE.H
+#ifndef LINKED_LIST_NODE_H
+#define LINKED_LIST_NODE_H
 
 
 #include "linked_list_node.h"
@@ -8,7 +8,7 @@
 struct SingleLinkedList {
 	LinkedListNode *head;
 	LinkedListNode *tail;
-}
+};
 
 /* Single Linked List Methods */
 
@@ -38,7 +38,7 @@ LinkedListNode *SingleLinkedListGetTail(DoublyLinkedList *self);
 struct DoublyLinkedList {
 	DoublyLinkedListNode *head;
 	DoublyLinkedListNode *tail;
-}
+};
 
 /* Doubly Linked List Methods */
 
